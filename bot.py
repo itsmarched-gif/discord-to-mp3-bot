@@ -71,5 +71,7 @@ async def mp3(interaction: discord.Interaction, url: str):
         await interaction.followup.send("❌ Failed while processing playlist.")
         print(e)
 
+if not TOKEN:
+    raise RuntimeError("DISCORD_BOT_TOKEN environment variable not set")
 
 client.run(TOKEN)
