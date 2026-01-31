@@ -4,7 +4,7 @@ import yt_dlp
 import os
 import re
 
-TOKEN = os.getenv("DISCORD_BOT_TOKEN")
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 class MyClient(discord.Client):
     def __init__(self):
